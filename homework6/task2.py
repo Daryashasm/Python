@@ -1,8 +1,6 @@
 import random
 L = int(input('Введите длину массива, L = '))
-array = []
-for i in range (L):
-    array.append(random.randint(1, 100))
+array = [random.randint(1, 100) for i in range (L)]
 print('Массив:', array)
 even_numbers = [y for x, y in enumerate(array) if x % 2 != 0]
 print('Массив:', even_numbers)
