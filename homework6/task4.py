@@ -1,0 +1,6 @@
+text = input ('Введите текст: ')
+fragment = input ('Введите интересующий фрагмент: ')
+words = text.split(' ')
+new_text = list(filter(lambda x: fragment not in x, text.split()))
+print('Исходный текст:', text)
+print('Измененный текст:', ' '.join(new_text))
